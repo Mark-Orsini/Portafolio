@@ -20,3 +20,43 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node.js (si usas herramientas de build)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Python (si usas scripts)
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos temporales
+*.tmp
+*.temp
+*.log
+.cache/
+
+# Archivos de respaldo
+*.bak
+*.backup
+*~
+
+# Archivos de sistema
+.Spotlight-V100
+.Trashes
+ehthumbs.db
