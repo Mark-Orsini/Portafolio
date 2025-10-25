@@ -20,7 +20,7 @@
 </head>
 <body class="theme-dark">
     
-    <!-- Botón flotante para abrir sidebar -->
+    <!-- Botón flotante para abrir sidebar (solo visible en móvil) -->
     <button id="botonMenuFlotante" class="boton-menu-flotante" onclick="alternarSidebar()" 
             onmouseover="efectoHoverBotonMenu(this, true)" 
             onmouseout="efectoHoverBotonMenu(this, false)">
@@ -31,7 +31,7 @@
     <div id="overlayFondo" class="overlay-fondo" onclick="cerrarSidebar()"></div>
 
     <!-- Barra lateral desplegable -->
-    <aside id="barraLateral" class="barra-lateral">
+    <aside id="barraLateral" class="barra-lateral" data-translate-container="nav">
         <div class="sidebar-header">
             <h3 class="sidebar-titulo" data-translate="menu">Menú</h3>
             <button class="boton-cerrar" onclick="cerrarSidebar()">
@@ -41,74 +41,74 @@
 
         <nav class="sidebar-nav">
             <a href="#inicio" class="nav-item active" onclick="navegarSeccion(event, 'inicio', this)" 
-                onmouseover="efectoHoverNavItem(this, true)" 
-                onmouseout="efectoHoverNavItem(this, false)">
+               onmouseover="efectoHoverNavItem(this, true)" 
+               onmouseout="efectoHoverNavItem(this, false)">
                 <i class="fas fa-home"></i>
                 <span data-translate="nav-home">Inicio</span>
             </a>
             <a href="#sobre-mi" class="nav-item" onclick="navegarSeccion(event, 'sobre-mi', this)"
-                onmouseover="efectoHoverNavItem(this, true)" 
-                onmouseout="efectoHoverNavItem(this, false)">
+               onmouseover="efectoHoverNavItem(this, true)" 
+               onmouseout="efectoHoverNavItem(this, false)">
                 <i class="fas fa-user"></i>
                 <span data-translate="nav-about">Sobre Mí</span>
             </a>
             <a href="#servicios" class="nav-item" onclick="navegarSeccion(event, 'servicios', this)"
-                onmouseover="efectoHoverNavItem(this, true)" 
-                onmouseout="efectoHoverNavItem(this, false)">
+               onmouseover="efectoHoverNavItem(this, true)" 
+               onmouseout="efectoHoverNavItem(this, false)">
                 <i class="fas fa-briefcase"></i>
                 <span data-translate="nav-services">Servicios</span>
             </a>
             <a href="#clientes" class="nav-item" onclick="navegarSeccion(event, 'clientes', this)"
-                onmouseover="efectoHoverNavItem(this, true)" 
-                onmouseout="efectoHoverNavItem(this, false)">
+               onmouseover="efectoHoverNavItem(this, true)" 
+               onmouseout="efectoHoverNavItem(this, false)">
                 <i class="fas fa-handshake"></i>
                 <span data-translate="nav-clients">Clientes</span>
             </a>
             <a href="#habilidades" class="nav-item" onclick="navegarSeccion(event, 'habilidades', this)"
-                onmouseover="efectoHoverNavItem(this, true)" 
-                onmouseout="efectoHoverNavItem(this, false)">
+               onmouseover="efectoHoverNavItem(this, true)" 
+               onmouseout="efectoHoverNavItem(this, false)">
                 <i class="fas fa-code"></i>
                 <span data-translate="nav-skills">Habilidades</span>
             </a>
             <a href="#educacion" class="nav-item" onclick="navegarSeccion(event, 'educacion', this)"
-                onmouseover="efectoHoverNavItem(this, true)" 
-                onmouseout="efectoHoverNavItem(this, false)">
+               onmouseover="efectoHoverNavItem(this, true)" 
+               onmouseout="efectoHoverNavItem(this, false)">
                 <i class="fas fa-graduation-cap"></i>
                 <span data-translate="nav-education">Educación</span>
             </a>
             <a href="#certificaciones" class="nav-item" onclick="navegarSeccion(event, 'certificaciones', this)"
-                onmouseover="efectoHoverNavItem(this, true)" 
-                onmouseout="efectoHoverNavItem(this, false)">
+               onmouseover="efectoHoverNavItem(this, true)" 
+               onmouseout="efectoHoverNavItem(this, false)">
                 <i class="fas fa-certificate"></i>
                 <span data-translate="nav-certifications">Certificaciones</span>
             </a>
             <a href="#experiencia" class="nav-item" onclick="navegarSeccion(event, 'experiencia', this)"
-                onmouseover="efectoHoverNavItem(this, true)" 
-                onmouseout="efectoHoverNavItem(this, false)">
+               onmouseover="efectoHoverNavItem(this, true)" 
+               onmouseout="efectoHoverNavItem(this, false)">
                 <i class="fas fa-laptop-code"></i>
                 <span data-translate="nav-experience">Experiencia</span>
             </a>
             <a href="#referencias" class="nav-item" onclick="navegarSeccion(event, 'referencias', this)"
-                onmouseover="efectoHoverNavItem(this, true)" 
-                onmouseout="efectoHoverNavItem(this, false)">
+               onmouseover="efectoHoverNavItem(this, true)" 
+               onmouseout="efectoHoverNavItem(this, false)">
                 <i class="fas fa-star"></i>
                 <span data-translate="nav-references">Referencias</span>
             </a>
             <a href="#portafolio" class="nav-item" onclick="navegarSeccion(event, 'portafolio', this)"
-                onmouseover="efectoHoverNavItem(this, true)" 
-                onmouseout="efectoHoverNavItem(this, false)">
+               onmouseover="efectoHoverNavItem(this, true)" 
+               onmouseout="efectoHoverNavItem(this, false)">
                 <i class="fas fa-folder-open"></i>
                 <span data-translate="nav-portfolio">Portafolio</span>
             </a>
             <a href="#organizaciones" class="nav-item" onclick="navegarSeccion(event, 'organizaciones', this)"
-                onmouseover="efectoHoverNavItem(this, true)" 
-                onmouseout="efectoHoverNavItem(this, false)">
+               onmouseover="efectoHoverNavItem(this, true)" 
+               onmouseout="efectoHoverNavItem(this, false)">
                 <i class="fas fa-users"></i>
                 <span data-translate="nav-organizations">Organizaciones</span>
             </a>
             <a href="#contacto" class="nav-item" onclick="navegarSeccion(event, 'contacto', this)"
-                onmouseover="efectoHoverNavItem(this, true)" 
-                onmouseout="efectoHoverNavItem(this, false)">
+               onmouseover="efectoHoverNavItem(this, true)" 
+               onmouseout="efectoHoverNavItem(this, false)">
                 <i class="fas fa-envelope"></i>
                 <span data-translate="nav-contact">Contacto</span>
             </a>
@@ -157,13 +157,13 @@
                     <!-- Enlaces sociales -->
                     <div class="hero-redes">
                         <a href="https://github.com/Mark-Orsini" target="_blank" class="red-social"
-                            onmouseover="efectoHoverRedSocial(this, true)"
-                            onmouseout="efectoHoverRedSocial(this, false)">
+                           onmouseover="efectoHoverRedSocial(this, true)"
+                           onmouseout="efectoHoverRedSocial(this, false)">
                             <i class="fab fa-github"></i>
                         </a>
                         <a href="mailto:markorsini11@gmail.com" class="red-social"
-                            onmouseover="efectoHoverRedSocial(this, true)"
-                            onmouseout="efectoHoverRedSocial(this, false)">
+                           onmouseover="efectoHoverRedSocial(this, true)"
+                           onmouseout="efectoHoverRedSocial(this, false)">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
@@ -173,7 +173,7 @@
                 <div class="hero-imagen">
                     <div class="imagen-contenedor">
                         <img src="static/img/profile.jpg" alt="Mark Orsini Carrillo" class="img-perfil"
-                            onerror="this.src='https://ui-avatars.com/api/?name=Mark+Orsini&size=400&background=6366f1&color=fff&bold=true'">
+                             onerror="this.src='https://ui-avatars.com/api/?name=Mark+Orsini&size=400&background=6366f1&color=fff&bold=true'">
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@
                     <div class="col-lg-6">
                         <div class="sobre-mi-imagen">
                             <img src="static/img/about-photo.jpg" alt="Mark Orsini" class="img-fluid rounded-4 shadow-lg"
-                                    onerror="this.src='https://ui-avatars.com/api/?name=Mark+Orsini&size=600&background=6366f1&color=fff&bold=true'">
+                                 onerror="this.src='https://ui-avatars.com/api/?name=Mark+Orsini&size=600&background=6366f1&color=fff&bold=true'">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -227,8 +227,8 @@
                     <!-- Servicio 1: Desarrollo Web -->
                     <div class="col-md-4">
                         <div class="tarjeta-servicio" 
-                                onmouseover="efectoHoverTarjeta(this, true)"
-                                onmouseout="efectoHoverTarjeta(this, false)">
+                             onmouseover="efectoHoverTarjeta(this, true)"
+                             onmouseout="efectoHoverTarjeta(this, false)">
                             <div class="servicio-icono">
                                 <i class="fas fa-laptop-code"></i>
                             </div>
@@ -242,8 +242,8 @@
                     <!-- Servicio 2: Backend -->
                     <div class="col-md-4">
                         <div class="tarjeta-servicio"
-                                onmouseover="efectoHoverTarjeta(this, true)"
-                                onmouseout="efectoHoverTarjeta(this, false)">
+                             onmouseover="efectoHoverTarjeta(this, true)"
+                             onmouseout="efectoHoverTarjeta(this, false)">
                             <div class="servicio-icono">
                                 <i class="fas fa-server"></i>
                             </div>
@@ -257,8 +257,8 @@
                     <!-- Servicio 3: Bases de Datos -->
                     <div class="col-md-4">
                         <div class="tarjeta-servicio"
-                                onmouseover="efectoHoverTarjeta(this, true)"
-                                onmouseout="efectoHoverTarjeta(this, false)">
+                             onmouseover="efectoHoverTarjeta(this, true)"
+                             onmouseout="efectoHoverTarjeta(this, false)">
                             <div class="servicio-icono">
                                 <i class="fas fa-database"></i>
                             </div>
@@ -283,8 +283,8 @@
                 <div class="row g-4 justify-content-center">
                     <div class="col-md-6 col-lg-4">
                         <div class="tarjeta-cliente"
-                                onmouseover="efectoHoverTarjeta(this, true)"
-                                onmouseout="efectoHoverTarjeta(this, false)">
+                             onmouseover="efectoHoverTarjeta(this, true)"
+                             onmouseout="efectoHoverTarjeta(this, false)">
                             <div class="cliente-logo">
                                 <i class="fas fa-school"></i>
                             </div>
@@ -295,8 +295,8 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="tarjeta-cliente"
-                                onmouseover="efectoHoverTarjeta(this, true)"
-                                onmouseout="efectoHoverTarjeta(this, false)">
+                             onmouseover="efectoHoverTarjeta(this, true)"
+                             onmouseout="efectoHoverTarjeta(this, false)">
                             <div class="cliente-logo">
                                 <i class="fas fa-project-diagram"></i>
                             </div>
@@ -427,38 +427,38 @@
                             
                             <div class="habilidades-blandas-grid">
                                 <div class="badge-habilidad"
-                                        onmouseover="efectoHoverBadge(this, true)"
-                                        onmouseout="efectoHoverBadge(this, false)">
+                                     onmouseover="efectoHoverBadge(this, true)"
+                                     onmouseout="efectoHoverBadge(this, false)">
                                     <i class="fas fa-users"></i>
                                     <span data-translate="skill-teamwork">Trabajo en equipo</span>
                                 </div>
                                 <div class="badge-habilidad"
-                                        onmouseover="efectoHoverBadge(this, true)"
-                                        onmouseout="efectoHoverBadge(this, false)">
+                                     onmouseover="efectoHoverBadge(this, true)"
+                                     onmouseout="efectoHoverBadge(this, false)">
                                     <i class="fas fa-user-tie"></i>
                                     <span data-translate="skill-leadership">Liderazgo</span>
                                 </div>
                                 <div class="badge-habilidad"
-                                        onmouseover="efectoHoverBadge(this, true)"
-                                        onmouseout="efectoHoverBadge(this, false)">
+                                     onmouseover="efectoHoverBadge(this, true)"
+                                     onmouseout="efectoHoverBadge(this, false)">
                                     <i class="fas fa-comments"></i>
                                     <span data-translate="skill-social">Sociable</span>
                                 </div>
                                 <div class="badge-habilidad"
-                                        onmouseover="efectoHoverBadge(this, true)"
-                                        onmouseout="efectoHoverBadge(this, false)">
+                                     onmouseover="efectoHoverBadge(this, true)"
+                                     onmouseout="efectoHoverBadge(this, false)">
                                     <i class="fas fa-smile"></i>
                                     <span data-translate="skill-friendly">Amigable</span>
                                 </div>
                                 <div class="badge-habilidad"
-                                        onmouseover="efectoHoverBadge(this, true)"
-                                        onmouseout="efectoHoverBadge(this, false)">
+                                     onmouseover="efectoHoverBadge(this, true)"
+                                     onmouseout="efectoHoverBadge(this, false)">
                                     <i class="fas fa-eye"></i>
                                     <span data-translate="skill-attentive">Atento</span>
                                 </div>
                                 <div class="badge-habilidad"
-                                        onmouseover="efectoHoverBadge(this, true)"
-                                        onmouseout="efectoHoverBadge(this, false)">
+                                     onmouseover="efectoHoverBadge(this, true)"
+                                     onmouseout="efectoHoverBadge(this, false)">
                                     <i class="fas fa-sync-alt"></i>
                                     <span data-translate="skill-flexible">Flexible</span>
                                 </div>
@@ -476,8 +476,8 @@
                 
                 <div class="timeline">
                     <div class="timeline-item"
-                            onmouseover="efectoHoverTarjeta(this, true)"
-                            onmouseout="efectoHoverTarjeta(this, false)">
+                         onmouseover="efectoHoverTarjeta(this, true)"
+                         onmouseout="efectoHoverTarjeta(this, false)">
                         <div class="timeline-icono">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
@@ -596,8 +596,8 @@
                             <h3 data-translate="contact-info-title">Información de Contacto</h3>
                             
                             <div class="contacto-item"
-                                    onmouseover="efectoHoverContacto(this, true)"
-                                    onmouseout="efectoHoverContacto(this, false)">
+                                 onmouseover="efectoHoverContacto(this, true)"
+                                 onmouseout="efectoHoverContacto(this, false)">
                                 <div class="contacto-icono">
                                     <i class="fas fa-envelope"></i>
                                 </div>
@@ -608,8 +608,8 @@
                             </div>
 
                             <div class="contacto-item"
-                                    onmouseover="efectoHoverContacto(this, true)"
-                                    onmouseout="efectoHoverContacto(this, false)">
+                                 onmouseover="efectoHoverContacto(this, true)"
+                                 onmouseout="efectoHoverContacto(this, false)">
                                 <div class="contacto-icono">
                                     <i class="fab fa-github"></i>
                                 </div>
@@ -620,8 +620,8 @@
                             </div>
 
                             <div class="contacto-item"
-                                    onmouseover="efectoHoverContacto(this, true)"
-                                    onmouseout="efectoHoverContacto(this, false)">
+                                 onmouseover="efectoHoverContacto(this, true)"
+                                 onmouseout="efectoHoverContacto(this, false)">
                                 <div class="contacto-icono">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
@@ -640,26 +640,26 @@
                                 <div class="mb-3">
                                     <label for="nombre" class="form-label" data-translate="contact-name-label">Nombre</label>
                                     <input type="text" class="form-control" id="nombre" required
-                                            onchange="validarCampo(this)"
-                                            placeholder="Tu nombre completo">
+                                           onchange="validarCampo(this)"
+                                           placeholder="Tu nombre completo">
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="form-label" data-translate="contact-email-input">Email</label>
                                     <input type="email" class="form-control" id="email" required
-                                            onchange="validarCampo(this)"
-                                            placeholder="tu@email.com">
+                                           onchange="validarCampo(this)"
+                                           placeholder="tu@email.com">
                                 </div>
                                 <div class="mb-3">
                                     <label for="asunto" class="form-label" data-translate="contact-subject">Asunto</label>
                                     <input type="text" class="form-control" id="asunto" required
-                                            onchange="validarCampo(this)"
-                                            placeholder="Asunto del mensaje">
+                                           onchange="validarCampo(this)"
+                                           placeholder="Asunto del mensaje">
                                 </div>
                                 <div class="mb-3">
                                     <label for="mensaje" class="form-label" data-translate="contact-message">Mensaje</label>
                                     <textarea class="form-control" id="mensaje" rows="5" required
-                                                onchange="validarCampo(this)"
-                                                placeholder="Escribe tu mensaje aquí..."></textarea>
+                                              onchange="validarCampo(this)"
+                                              placeholder="Escribe tu mensaje aquí..."></textarea>
                                 </div>
                                 <button type="submit" class="btn-principal w-100"
                                         onmouseover="efectoHoverBoton(this, true)"
@@ -697,13 +697,13 @@
                         <h4 data-translate="footer-social-title">Sígueme</h4>
                         <div class="footer-social">
                             <a href="https://github.com/Mark-Orsini" target="_blank" class="social-link"
-                                onmouseover="efectoHoverRedSocial(this, true)"
-                                onmouseout="efectoHoverRedSocial(this, false)">
+                               onmouseover="efectoHoverRedSocial(this, true)"
+                               onmouseout="efectoHoverRedSocial(this, false)">
                                 <i class="fab fa-github"></i>
                             </a>
                             <a href="mailto:markorsini11@gmail.com" class="social-link"
-                                onmouseover="efectoHoverRedSocial(this, true)"
-                                onmouseout="efectoHoverRedSocial(this, false)">
+                               onmouseover="efectoHoverRedSocial(this, true)"
+                               onmouseout="efectoHoverRedSocial(this, false)">
                                 <i class="fas fa-envelope"></i>
                             </a>
                         </div>

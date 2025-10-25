@@ -516,6 +516,12 @@ a:hover {
 .sobre-mi-texto {
     font-size: 1.1rem;
     line-height: 1.8;
+    color: var(--color-texto);
+}
+
+.sobre-mi-texto p {
+    color: var(--color-texto);
+    margin-bottom: var(--espaciado-md);
 }
 
 .parrafo-destacado {
@@ -678,6 +684,7 @@ a:hover {
     max-width: 800px;
     margin: 0 auto;
     position: relative;
+    padding-left: 40px;
 }
 
 .timeline::before {
@@ -709,7 +716,8 @@ a:hover {
     justify-content: center;
     font-size: 1.5rem;
     color: white;
-    box-shadow: var(--sombra-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 2;
 }
 
 .timeline-contenido {
@@ -718,11 +726,13 @@ a:hover {
     border-radius: var(--radio-border-lg);
     border: 2px solid transparent;
     transition: all var(--transicion-normal);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-contenido:hover {
     border-color: var(--color-primario);
     transform: translateX(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .timeline-fecha {
@@ -738,11 +748,16 @@ a:hover {
 .timeline-contenido h3 {
     font-size: 1.5rem;
     margin-bottom: var(--espaciado-xs);
+    color: var(--color-texto);
 }
 
 .timeline-contenido h4 {
     color: var(--color-texto-secundario);
     margin-bottom: var(--espaciado-sm);
+}
+
+.timeline-contenido p {
+    color: var(--color-texto);
 }
 
 /* ============ PLACEHOLDERS ============ */
@@ -1345,6 +1360,10 @@ input:checked + .slider:before {
     
     .seccion-contenido {
         padding: var(--espaciado-lg) var(--espaciado-sm);
+    }
+    
+    .timeline {
+        padding-left: 20px;
     }
     
     .timeline::before {
