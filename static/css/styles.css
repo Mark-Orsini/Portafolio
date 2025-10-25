@@ -345,7 +345,6 @@ a:hover {
 .hero-botones {
     display: flex;
     gap: var(--espaciado-md);
-    margin-bottom: var(--espaciado-lg);
 }
 
 .btn-principal,
