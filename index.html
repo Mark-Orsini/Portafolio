@@ -20,7 +20,7 @@
 </head>
 <body class="theme-dark">
     
-    <!-- Botón flotante para abrir sidebar (solo visible en móvil) -->
+    <!-- Botón flotante para abrir sidebar (ahora en la esquina superior izquierda) -->
     <button id="botonMenuFlotante" class="boton-menu-flotante" onclick="alternarSidebar()" 
             onmouseover="efectoHoverBotonMenu(this, true)" 
             onmouseout="efectoHoverBotonMenu(this, false)">
@@ -30,99 +30,6 @@
     <!-- Overlay para cerrar sidebar al hacer click fuera -->
     <div id="overlayFondo" class="overlay-fondo" onclick="cerrarSidebar()"></div>
 
-    <!-- Barra lateral desplegable -->
-    <aside id="barraLateral" class="barra-lateral" data-translate-container="nav">
-        <div class="sidebar-header">
-            <h3 class="sidebar-titulo" data-translate="menu">Menú</h3>
-            <button class="boton-cerrar" onclick="cerrarSidebar()">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-
-        <nav class="sidebar-nav">
-            <a href="#inicio" class="nav-item active" onclick="navegarSeccion(event, 'inicio', this)" 
-               onmouseover="efectoHoverNavItem(this, true)" 
-               onmouseout="efectoHoverNavItem(this, false)">
-                <i class="fas fa-home"></i>
-                <span data-translate="nav-home">Inicio</span>
-            </a>
-            <a href="#sobre-mi" class="nav-item" onclick="navegarSeccion(event, 'sobre-mi', this)"
-               onmouseover="efectoHoverNavItem(this, true)" 
-               onmouseout="efectoHoverNavItem(this, false)">
-                <i class="fas fa-user"></i>
-                <span data-translate="nav-about">Sobre Mí</span>
-            </a>
-            <a href="#servicios" class="nav-item" onclick="navegarSeccion(event, 'servicios', this)"
-               onmouseover="efectoHoverNavItem(this, true)" 
-               onmouseout="efectoHoverNavItem(this, false)">
-                <i class="fas fa-briefcase"></i>
-                <span data-translate="nav-services">Servicios</span>
-            </a>
-            <a href="#clientes" class="nav-item" onclick="navegarSeccion(event, 'clientes', this)"
-               onmouseover="efectoHoverNavItem(this, true)" 
-               onmouseout="efectoHoverNavItem(this, false)">
-                <i class="fas fa-handshake"></i>
-                <span data-translate="nav-clients">Clientes</span>
-            </a>
-            <a href="#habilidades" class="nav-item" onclick="navegarSeccion(event, 'habilidades', this)"
-               onmouseover="efectoHoverNavItem(this, true)" 
-               onmouseout="efectoHoverNavItem(this, false)">
-                <i class="fas fa-code"></i>
-                <span data-translate="nav-skills">Habilidades</span>
-            </a>
-            <a href="#educacion" class="nav-item" onclick="navegarSeccion(event, 'educacion', this)"
-               onmouseover="efectoHoverNavItem(this, true)" 
-               onmouseout="efectoHoverNavItem(this, false)">
-                <i class="fas fa-graduation-cap"></i>
-                <span data-translate="nav-education">Educación</span>
-            </a>
-            <a href="#certificaciones" class="nav-item" onclick="navegarSeccion(event, 'certificaciones', this)"
-               onmouseover="efectoHoverNavItem(this, true)" 
-               onmouseout="efectoHoverNavItem(this, false)">
-                <i class="fas fa-certificate"></i>
-                <span data-translate="nav-certifications">Certificaciones</span>
-            </a>
-            <a href="#experiencia" class="nav-item" onclick="navegarSeccion(event, 'experiencia', this)"
-               onmouseover="efectoHoverNavItem(this, true)" 
-               onmouseout="efectoHoverNavItem(this, false)">
-                <i class="fas fa-laptop-code"></i>
-                <span data-translate="nav-experience">Experiencia</span>
-            </a>
-            <a href="#referencias" class="nav-item" onclick="navegarSeccion(event, 'referencias', this)"
-               onmouseover="efectoHoverNavItem(this, true)" 
-               onmouseout="efectoHoverNavItem(this, false)">
-                <i class="fas fa-star"></i>
-                <span data-translate="nav-references">Referencias</span>
-            </a>
-            <a href="#portafolio" class="nav-item" onclick="navegarSeccion(event, 'portafolio', this)"
-               onmouseover="efectoHoverNavItem(this, true)" 
-               onmouseout="efectoHoverNavItem(this, false)">
-                <i class="fas fa-folder-open"></i>
-                <span data-translate="nav-portfolio">Portafolio</span>
-            </a>
-            <a href="#organizaciones" class="nav-item" onclick="navegarSeccion(event, 'organizaciones', this)"
-               onmouseover="efectoHoverNavItem(this, true)" 
-               onmouseout="efectoHoverNavItem(this, false)">
-                <i class="fas fa-users"></i>
-                <span data-translate="nav-organizations">Organizaciones</span>
-            </a>
-            <a href="#contacto" class="nav-item" onclick="navegarSeccion(event, 'contacto', this)"
-               onmouseover="efectoHoverNavItem(this, true)" 
-               onmouseout="efectoHoverNavItem(this, false)">
-                <i class="fas fa-envelope"></i>
-                <span data-translate="nav-contact">Contacto</span>
-            </a>
-            
-            <!-- Separador -->
-            <div class="sidebar-divider"></div>
-            
-            <!-- Enlace a configuración -->
-            <a href="settings.html" class="nav-item nav-item-especial">
-                <i class="fas fa-cog"></i>
-                <span data-translate="nav-settings">Configuración</span>
-            </a>
-        </nav>
-    </aside>
 
     <!-- Contenido Principal -->
     <main id="contenidoPrincipal" class="contenido-principal">
