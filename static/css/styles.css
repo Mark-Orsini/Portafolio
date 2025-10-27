@@ -128,11 +128,11 @@ a:hover {
     visibility: visible;
 }
 
-/* ============ BARRA LATERAL ============ */
+/* ============ BARRA LATERAL - CORREGIDA ============ */
 .barra-lateral {
     position: fixed;
     top: 0;
-    right: -var(--ancho-sidebar); /* CORREGIDO: Inicia fuera de la pantalla */
+    right: -var(--ancho-sidebar);
     width: var(--ancho-sidebar);
     height: 100vh;
     background-color: var(--color-superficie);
@@ -145,20 +145,20 @@ a:hover {
 }
 
 .barra-lateral.active {
-    right: 0; /* Se muestra al activarse */
+    right: 0; /* Se muestra al activarse (desde derecha) */
 }
 
-/* Sidebar en móvil (izquierda) */
+/* Sidebar en móvil (izquierda) - CORREGIDO */
 @media (max-width: 768px) {
     .barra-lateral {
-        right: auto;
-        left: -var(--ancho-sidebar); /* CORREGIDO: Inicia fuera de la pantalla */
+        right: auto !important; /* ✅ CRÍTICO: Desactivar completamente la posición derecha */
+        left: -var(--ancho-sidebar); /* ✅ Inicia OCULTA fuera de la pantalla (izquierda) */
         transition: left var(--transicion-normal) ease-in-out;
     }
     
     .barra-lateral.active {
-        right: auto;
-        left: 0; /* Se muestra al activarse */
+        right: auto !important; /* ✅ CRÍTICO: Mantener desactivada la posición derecha */
+        left: 0; /* Se muestra al activarse (desde izquierda) */
     }
 }
 
