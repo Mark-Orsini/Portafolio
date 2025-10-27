@@ -279,6 +279,19 @@ function inicializarSidebar() {
     
     // Event listeners para los items de navegación
     navItems.forEach(item => {
+        // CORREGIDO: Verificar si es un enlace a settings.html
+        const href = item.getAttribute('href');
+        
+        // Si es el enlace a settings.html, dejarlo funcionar normalmente
+        if (href && href.includes('settings.html')) {
+            console.log('🔗 Enlace a configuración detectado, permitiendo navegación normal');
+            item.addEventListener('click', function(e) {
+                cerrarSidebar(); // Solo cerrar el sidebar, permitir que el link funcione
+            });
+            return; // Salir del loop para este item
+        }
+        
+        // Para los demás items, manejar la navegación interna
         item.addEventListener('click', function(e) {
             e.preventDefault();
             const seccionId = this.getAttribute('data-seccion') || this.getAttribute('href').substring(1);

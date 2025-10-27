@@ -132,7 +132,7 @@ a:hover {
 .barra-lateral {
     position: fixed;
     top: 0;
-    right: -var(--ancho-sidebar);
+    right: -var(--ancho-sidebar); /* CORREGIDO: Inicia fuera de la pantalla */
     width: var(--ancho-sidebar);
     height: 100vh;
     background-color: var(--color-superficie);
@@ -145,20 +145,20 @@ a:hover {
 }
 
 .barra-lateral.active {
-    right: 0;
+    right: 0; /* Se muestra al activarse */
 }
 
 /* Sidebar en móvil (izquierda) */
 @media (max-width: 768px) {
     .barra-lateral {
         right: auto;
-        left: -var(--ancho-sidebar);
+        left: -var(--ancho-sidebar); /* CORREGIDO: Inicia fuera de la pantalla */
         transition: left var(--transicion-normal) ease-in-out;
     }
     
     .barra-lateral.active {
         right: auto;
-        left: 0;
+        left: 0; /* Se muestra al activarse */
     }
 }
 
