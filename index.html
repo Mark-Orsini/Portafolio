@@ -17,6 +17,43 @@
     
     <!-- Font Awesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ===== CORRECCIÓN CRÍTICA BARRA LATERAL ===== */
+        .barra-lateral {
+            position: fixed !important;
+            top: 0 !important;
+            right: -320px !important;
+            left: auto !important;
+            width: 320px !important;
+            height: 100vh !important;
+            background-color: var(--color-superficie) !important;
+            z-index: 999 !important;
+            overflow-y: auto !important;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2) !important;
+            transition: right 0.3s ease-in-out !important;
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .barra-lateral.active {
+            right: 0 !important;
+        }
+
+        /* Móvil: Barra desde la izquierda */
+        @media (max-width: 768px) {
+            .barra-lateral {
+                right: auto !important;
+                left: -320px !important;
+                transition: left 0.3s ease-in-out !important;
+            }
+            
+            .barra-lateral.active {
+                right: auto !important;
+                left: 0 !important;
+            }
+        }
+    </style>    
 </head>
 <body class="theme-dark">
     
