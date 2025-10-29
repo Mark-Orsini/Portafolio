@@ -375,3 +375,16 @@ window.addEventListener('resize', () => {
         animarBarrasProgreso();
     }, 250);
 });
+
+// Función para efecto hover en tarjetas de proyectos
+function efectoHoverProyecto(elemento, activar) {
+    if (activar) {
+        elemento.style.transform = 'translateY(-10px)';
+        elemento.style.boxShadow = 'var(--sombra-lg)';
+        elemento.style.borderColor = 'var(--color-primario)';
+    } else {
+        elemento.style.transform = 'translateY(0)';
+        elemento.style.boxShadow = 'none';
+        elemento.style.borderColor = 'transparent';
+    }
+}

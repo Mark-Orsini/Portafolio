@@ -528,11 +528,37 @@
                     Mi trayectoria en desarrollo de proyectos
                 </p>
                 
-                <div class="experiencia-placeholder">
-                    <i class="fas fa-laptop-code fa-3x mb-3"></i>
-                    <p data-translate="experience-student">
-                        Actualmente en formación académica desarrollando múltiples proyectos educativos. Próximamente se agregarán experiencias profesionales y prácticas.
-                    </p>
+                <div class="timeline">
+                    <div class="timeline-item"
+                        onmouseover="efectoHoverTarjeta(this, true)"
+                        onmouseout="efectoHoverTarjeta(this, false)">
+                        <div class="timeline-icono">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="timeline-contenido">
+                            <span class="timeline-fecha">2024</span>
+                            <h3>Líder de Equipos - Semana TP</h3>
+                            <h4>Liceo Comercial Vate Vicente Huidobro</h4>
+                            <p>
+                                Participación activa y liderazgo en la organización de la Semana Técnica Profesional del liceo. 
+                                Tuve la responsabilidad de coordinar y dirigir 3 equipos diferentes para el desarrollo de 
+                                actividades y proyectos durante toda la semana. Esta experiencia me permitió desarrollar 
+                                habilidades de liderazgo, organización y trabajo en equipo, además de fortalecer mi capacidad 
+                                para motivar y guiar a otros estudiantes en el cumplimiento de objetivos comunes.
+                            </p>
+                            <div class="experiencia-logros">
+                                <span class="logro-badge">
+                                    <i class="fas fa-users"></i> Liderazgo de 3 equipos
+                                </span>
+                                <span class="logro-badge">
+                                    <i class="fas fa-calendar-check"></i> Coordinación de actividades semanales
+                                </span>
+                                <span class="logro-badge">
+                                    <i class="fas fa-trophy"></i> Organización exitosa del evento
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -542,19 +568,36 @@
             <div class="container">
                 <h2 class="titulo-seccion" data-translate="references-title">Referencias</h2>
                 <p class="subtitulo-seccion" data-translate="references-subtitle">
-                    Referencias disponibles a solicitud
+                    Referencias profesionales y académicas
                 </p>
                 
-                <div class="referencias-placeholder">
-                    <i class="fas fa-user-check fa-3x mb-3"></i>
-                    <p data-translate="references-available">
-                        Referencias de profesores y mentores disponibles mediante contacto directo.
-                    </p>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="referencia-card"
+                            onmouseover="efectoHoverTarjeta(this, true)"
+                            onmouseout="efectoHoverTarjeta(this, false)">
+                            <div class="referencia-header">
+                                <div class="referencia-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="referencia-info">
+                                    <h3>Dany Hernandez</h3>
+                                    <p>Profesor de Programación</p>
+                                    <p>Liceo Comercial Vate Vicente Huidobro</p>
+                                </div>
+                            </div>
+                            <div class="referencia-contacto">
+                                <a href="mailto:danyhernandez@comeduc.cl" class="contacto-ref">
+                                    <i class="fas fa-envelope"></i> danyhernandez@comeduc.cl
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sección Portafolio (Continuará con proyectos cuando los proporciones) -->
+        <!-- Sección Portafolio -->
         <section id="portafolio" class="seccion-contenido">
             <div class="container">
                 <h2 class="titulo-seccion" data-translate="portfolio-title">Portafolio</h2>
@@ -563,13 +606,86 @@
                 </p>
                 
                 <div class="row g-4" id="contenedorProyectos">
-                    <!-- Los proyectos se agregarán aquí dinámicamente o cuando me los proporciones -->
-                    <div class="col-12">
-                        <div class="proyectos-placeholder">
-                            <i class="fas fa-folder-open fa-3x mb-3"></i>
-                            <p data-translate="portfolio-coming-soon">
-                                Proyectos en desarrollo. Pronto se agregarán repositorios y demostraciones.
-                            </p>
+                    <!-- Proyecto 1: Desarrollo Web -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="proyecto-card"
+                            onmouseover="efectoHoverTarjeta(this, true)"
+                            onmouseout="efectoHoverTarjeta(this, false)">
+                            <div class="proyecto-imagen">
+                                <div class="proyecto-icono">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                            </div>
+                            <div class="proyecto-contenido">
+                                <h3>Desarrollo Web Inicial</h3>
+                                <p>Repositorio donde comencé con el desarrollo web utilizando CSS, HTML y JavaScript.</p>
+                                <div class="proyecto-tecnologias">
+                                    <span class="tecnologia">HTML</span>
+                                    <span class="tecnologia">CSS</span>
+                                    <span class="tecnologia">JavaScript</span>
+                                </div>
+                                <div class="proyecto-enlaces">
+                                    <a href="https://github.com/Mark-Orsini/desarrollo_appWed" target="_blank" class="enlace-proyecto">
+                                        <i class="fab fa-github"></i> Ver Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2: Base de Datos -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="proyecto-card"
+                            onmouseover="efectoHoverTarjeta(this, true)"
+                            onmouseout="efectoHoverTarjeta(this, false)">
+                            <div class="proyecto-imagen">
+                                <div class="proyecto-icono">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                            </div>
+                            <div class="proyecto-contenido">
+                                <h3>Administración de Base de Datos</h3>
+                                <p>Repositorio donde comencé con el desarrollo y administración de bases de datos SQL.</p>
+                                <div class="proyecto-tecnologias">
+                                    <span class="tecnologia">SQL</span>
+                                    <span class="tecnologia">Base de Datos</span>
+                                </div>
+                                <div class="proyecto-enlaces">
+                                    <a href="https://github.com/Mark-Orsini/administracion_BData" target="_blank" class="enlace-proyecto">
+                                        <i class="fab fa-github"></i> Ver Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3: Página Informativa -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="proyecto-card"
+                            onmouseover="efectoHoverTarjeta(this, true)"
+                            onmouseout="efectoHoverTarjeta(this, false)">
+                            <div class="proyecto-imagen">
+                                <div class="proyecto-icono">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                            </div>
+                            <div class="proyecto-contenido">
+                                <h3>Página Informativa TP 2025</h3>
+                                <p>Página web para representar la especialidad de programación 2025 en el Liceo Vate Vicente Huidobro.</p>
+                                <div class="proyecto-tecnologias">
+                                    <span class="tecnologia">HTML</span>
+                                    <span class="tecnologia">CSS</span>
+                                    <span class="tecnologia">JavaScript</span>
+                                </div>
+                                <div class="proyecto-enlaces">
+                                    <a href="https://mark-orsini.github.io/pagina_informativa_tp/" target="_blank" class="enlace-proyecto">
+                                        <i class="fas fa-external-link-alt"></i> Ver Demo
+                                    </a>
+                                    <a href="https://github.com/Mark-Orsini/pagina_informativa_tp" target="_blank" class="enlace-proyecto">
+                                        <i class="fab fa-github"></i> Ver Código
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
