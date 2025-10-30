@@ -4,7 +4,6 @@ let anchoVentana = window.innerWidth;
 
 // Función para alternar el sidebar (abrir/cerrar)
 function alternarSidebar() {
-    console.log('🔄 Alternando sidebar. Estado actual:', sidebarAbierto);
     if (sidebarAbierto) {
         cerrarSidebar();
     } else {
@@ -14,13 +13,11 @@ function alternarSidebar() {
 
 // Función para abrir el sidebar
 function abrirSidebar() {
-    console.log('📂 Abriendo sidebar...');
     const sidebar = document.getElementById('barraLateral');
     const overlay = document.getElementById('overlayFondo');
     const botonMenu = document.getElementById('botonMenuFlotante');
     
     if (!sidebar || !overlay || !botonMenu) {
-        console.error('❌ No se encontraron los elementos del sidebar');
         return;
     }
     
@@ -33,19 +30,15 @@ function abrirSidebar() {
     
     // Prevenir scroll del body cuando el sidebar está abierto
     document.body.style.overflow = 'hidden';
-    
-    console.log('✅ Sidebar abierto');
 }
 
 // Función para cerrar el sidebar
 function cerrarSidebar() {
-    console.log('📁 Cerrando sidebar...');
     const sidebar = document.getElementById('barraLateral');
     const overlay = document.getElementById('overlayFondo');
     const botonMenu = document.getElementById('botonMenuFlotante');
     
     if (!sidebar || !overlay || !botonMenu) {
-        console.error('❌ No se encontraron los elementos del sidebar');
         return;
     }
     
@@ -64,7 +57,6 @@ function cerrarSidebar() {
 
 // Función para navegar a una sección específica
 function navegarSeccion(evento, seccionId, elemento) {
-    console.log('🧭 Navegando a:', seccionId);
     if (evento) {
         evento.preventDefault();
     }
@@ -86,7 +78,6 @@ function navegarSeccion(evento, seccionId, elemento) {
 
 // Función para navegar a una sección (versión sin evento)
 function navegarASeccion(seccionId) {
-    console.log('🧭 Navegando a (directo):', seccionId);
     cerrarSidebar();
     
     const seccion = document.getElementById(seccionId);
@@ -223,8 +214,6 @@ function manejarGesto() {
 
 // Función para inicializar el sidebar
 function inicializarSidebar() {
-    console.log('🚀 Inicializando sidebar...');
-    
     const overlay = document.getElementById('overlayFondo');
     const sidebar = document.getElementById('barraLateral');
     const botonMenu = document.getElementById('botonMenuFlotante');
@@ -233,17 +222,14 @@ function inicializarSidebar() {
     
     // Verificar que existen los elementos principales
     if (!sidebar) {
-        console.error('❌ No se encontró el sidebar');
         return;
     }
     
     if (!overlay) {
-        console.error('❌ No se encontró el overlay');
         return;
     }
     
     if (!botonMenu) {
-        console.error('❌ No se encontró el botón de menú');
         return;
     }
     
@@ -251,7 +237,6 @@ function inicializarSidebar() {
     botonMenu.addEventListener('click', function(e) {
         e.preventDefault();
         e.stopPropagation();
-        console.log('🖱️ Click en botón de menú');
         alternarSidebar();
     });
     
@@ -260,7 +245,6 @@ function inicializarSidebar() {
         overlay.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
-            console.log('🖱️ Click en overlay');
             cerrarSidebar();
         });
     }
@@ -270,7 +254,6 @@ function inicializarSidebar() {
         botonCerrar.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
-            console.log('🖱️ Click en botón cerrar (X)');
             cerrarSidebar();
         });
     } else {
@@ -295,7 +278,6 @@ function inicializarSidebar() {
         item.addEventListener('click', function(e) {
             e.preventDefault();
             const seccionId = this.getAttribute('data-seccion') || this.getAttribute('href').substring(1);
-            console.log('🖱️ Click en nav item:', seccionId);
             navegarSeccion(null, seccionId, this);
         });
         
@@ -328,12 +310,6 @@ function inicializarSidebar() {
     // Detectar sección visible al cargar
     detectarSeccionVisible();
     
-    console.log('✅ Sidebar inicializado correctamente');
-    console.log('📊 Event listeners configurados:');
-    console.log('   - Botón menú:', botonMenu ? '✓' : '✗');
-    console.log('   - Overlay:', overlay ? '✓' : '✗');
-    console.log('   - Botón cerrar:', botonCerrar ? '✓' : '✗');
-    console.log('   - Items navegación:', navItems.length);
 }
 
 // Inicializar cuando el DOM esté listo

@@ -1,7 +1,7 @@
 /* ========================================
-   FUNCIONALIDADES PRINCIPALES - PORTAFOLIO MARK ORSINI
-   Autor: Mark Orsini Carrillo
-   Descripción: Funciones principales del portafolio
+    FUNCIONALIDADES PRINCIPALES - PORTAFOLIO MARK ORSINI
+    Autor: Mark Orsini Carrillo
+    Descripción: Funciones principales del portafolio
    ======================================== */
 
 // ============ VALIDACIÓN DE FORMULARIOS ============
