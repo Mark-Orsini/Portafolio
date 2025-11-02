@@ -40,7 +40,7 @@ mi-portafolio/
 │   ├── js/                # Scripts
 │   └── img/               # Imágenes
 └── README.md              # Este archivo
-
+```
 ### Ver en línea
 
 Visita: [https://Mark-Orsini.github.io/Portafolio](https://Mark-Orsini.github.io/Portafolio)
