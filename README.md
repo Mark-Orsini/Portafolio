@@ -1,4 +1,3 @@
-markdown
 # 🎨 Mi Portafolio Web Profesional
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue)](https://Mark-Orsini.github.io/Portafolio)
@@ -39,23 +38,8 @@ mi-portafolio/
 ├── static/
 │   ├── css/               # Estilos
 │   ├── js/                # Scripts
-│   ├── img/               # Imágenes
-│   └── video/             # Videos
+│   └── img/               # Imágenes
 └── README.md              # Este archivo
-```
-
-## 🚀 Instalación y Uso
-
-### Clonar el repositorio
-
-```bash
-git clone https://github.com/Mark-Orsini/Portafolio.git
-cd Portafolio
-```
-
-### Abrir localmente
-
-Simplemente abre `index.html` en tu navegador favorito.
 
 ### Ver en línea
 
@@ -101,7 +85,7 @@ Visita: [https://Mark-Orsini.github.io/Portafolio](https://Mark-Orsini.github.io
 
 ## 👨‍💻 Autor
 
-**Tu Nombre Completo**
+**Mark Orsini Carrillo**
 - GitHub: [@Mark-Orsini](https://github.com/Mark-Orsini)
 - Email: markorsini11@gmail.com
 
@@ -111,37 +95,3 @@ Visita: [https://Mark-Orsini.github.io/Portafolio](https://Mark-Orsini.github.io
 - Profesor: Dany - Por la guía y enseñanza en Programación Web
 - Liceo Comercial Vate Vicente Huidobro
 - Comunidad de desarrollo web
-
-```
-
----
-
-## 🚀 Próximos Pasos
-
-1. **Crear el repositorio en GitHub**
-   - Ve a github.com
-   - Click en "New repository"
-   - Nombre: `mi-portafolio` (o el que prefieras)
-   - Marcar como "Public"
-   - NO inicializar con README (lo crearemos nosotros)
-
-2. **Personalizar la información**
-   - Dame tus datos personales
-   - Información de tus proyectos
-   - Skills y experiencia
-
-3. **Activar GitHub Pages**
-   - Settings → Pages
-   - Source: Deploy from a branch
-   - Branch: main / (root)
-   - Save
-
-4. **Subir el código**
-   ```bash
-   git init
-   git add .
-   git commit -m "🎉 Primer commit: Portafolio profesional"
-   git branch -M main
-   git remote add origin https://github.com/TU-USUARIO/mi-portafolio.git
-   git push -u origin main
-   ```
