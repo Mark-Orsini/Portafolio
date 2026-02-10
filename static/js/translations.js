@@ -22,21 +22,21 @@ const traducciones = {
         'nav-organizations': 'Organizaciones',
         'nav-contact': 'Contacto',
         'nav-settings': 'Configuración',
-        
+
         // Home
-        'home-greeting': '¡Hola! Soy',
-        'home-title': 'Técnico Profesional en Programación',
-        'home-subtitle': 'Creando soluciones digitales innovadoras y funcionales',
-        'home-cta-portfolio': 'Ver Portafolio',
+        'home-greeting': 'Hola, soy',
+        'home-title': 'Técnico en Programación',
+        'home-subtitle': 'Desarrollador web enfocado en crear soluciones funcionales.',
+        'home-cta-portfolio': 'Ver Proyectos',
         'home-cta-contact': 'Contactar',
-        
+
         // Sobre Mí
         'about-title': 'Sobre Mí',
-        'about-intro': 'Soy Mark Orsini Carrillo, estudiante de Técnico Profesional en Programación en el Liceo Comercial Vate Vicente Huidobro, Santiago, Chile. Mi pasión por la tecnología y el desarrollo de software me impulsa cada día a aprender más y a enfrentar nuevos desafíos.',
-        'about-passion': 'Me considero una persona con una gran disposición para el aprendizaje continuo. En el mundo de la programación, donde las tecnologías evolucionan constantemente, me esfuerzo por mantenerme actualizado con los lenguajes y herramientas que domino.',
-        'about-personality': 'Más allá de mis capacidades técnicas, valoro profundamente el trabajo en equipo y las relaciones interpersonales. Soy una persona positiva, amable y sociable.',
-        'about-future': 'Mi objetivo es seguir creciendo como profesional en el ámbito tecnológico, contribuir con soluciones innovadoras y formar parte de equipos donde pueda aportar mis conocimientos.',
-        
+        'about-intro': 'Soy Mark Orsini, estudiante de Programación en el Liceo Comercial Vate Vicente Huidobro. Me apasiona la tecnología y disfruto aprendiendo nuevas herramientas para mejorar mis habilidades.',
+        'about-passion': 'Me gusta mantenerme actualizado en un entorno que cambia constantemente. Siempre busco entender a fondo las tecnologías que utilizo.',
+        'about-personality': 'Valoro el trabajo en equipo y la buena comunicación. Creo que un buen ambiente es clave para desarrollar mejores proyectos.',
+        'about-future': 'Mi meta es seguir creciendo profesionalmente y aportar con mi trabajo en equipos donde pueda seguir aprendiendo.',
+
         // Servicios
         'services-title': 'Servicios',
         'services-subtitle': 'Áreas en las que puedo aportar valor',
@@ -46,7 +46,7 @@ const traducciones = {
         'service-backend-desc': 'Desarrollo de APIs y lógica de servidor con Python, .NET y otros lenguajes de programación robustos.',
         'service-db-title': 'Bases de Datos',
         'service-db-desc': 'Diseño, implementación y gestión de bases de datos SQL para almacenamiento eficiente de información.',
-        
+
         // Clientes
         'clients-title': 'Experiencias Educativas',
         'clients-subtitle': 'Proyectos desarrollados durante mi formación',
@@ -54,7 +54,7 @@ const traducciones = {
         'client-school-desc': 'Proyectos académicos y colaborativos',
         'client-personal': 'Proyectos Personales',
         'client-personal-desc': 'Desarrollo independiente de aplicaciones',
-        
+
         // Habilidades
         'skills-title': 'Habilidades',
         'skills-technical': 'Habilidades Técnicas',
@@ -65,38 +65,38 @@ const traducciones = {
         'skill-friendly': 'Amigable',
         'skill-attentive': 'Atento',
         'skill-flexible': 'Flexible',
-        
+
         // Educación
         'education-title': 'Educación',
         'education-tp-title': 'Técnico Profesional en Programación',
         'education-school': 'Liceo Comercial Vate Vicente Huidobro',
         'education-desc': 'Formación técnica profesional de nivel medio en programación.',
-        
+
         // Certificaciones
         'certifications-title': 'Certificaciones',
         'certifications-subtitle': 'Actualmente en proceso de obtener certificaciones profesionales',
         'certifications-coming-soon': 'Próximamente se agregarán certificaciones obtenidas',
-        
+
         // Experiencia
         'experience-title': 'Experiencia',
         'experience-subtitle': 'Mi trayectoria en desarrollo de proyectos',
         'experience-student': 'Actualmente en formación académica desarrollando múltiples proyectos educativos.',
-        
+
         // Referencias
         'references-title': 'Referencias',
         'references-subtitle': 'Referencias disponibles a solicitud',
         'references-available': 'Referencias de profesores y mentores disponibles mediante contacto directo.',
-        
+
         // Portafolio
         'portfolio-title': 'Portafolio',
         'portfolio-subtitle': 'Mis proyectos destacados',
         'portfolio-coming-soon': 'Proyectos en desarrollo. Pronto se agregarán repositorios y demostraciones.',
-        
+
         // Organizaciones
         'organizations-title': 'Organizaciones',
         'organizations-subtitle': 'Participación en actividades extracurriculares',
         'organizations-desc': 'Información sobre participación en organizaciones, clubes y actividades comunitarias se agregará próximamente.',
-        
+
         // Contacto
         'contact-title': 'Contacto',
         'contact-subtitle': '¿Tienes un proyecto en mente? ¡Hablemos!',
@@ -109,13 +109,13 @@ const traducciones = {
         'contact-subject': 'Asunto',
         'contact-message': 'Mensaje',
         'contact-send-btn': 'Enviar Mensaje',
-        
+
         // Footer
         'footer-description': 'Técnico Profesional en Programación, apasionado por crear soluciones digitales innovadoras.',
         'footer-links-title': 'Enlaces Rápidos',
         'footer-social-title': 'Sígueme',
         'footer-rights': 'Todos los derechos reservados.',
-        
+
         // Settings
         'settings-title': 'Configuración',
         'settings-back': 'Volver al Portafolio',
@@ -129,7 +129,7 @@ const traducciones = {
         'settings-smooth-scroll': 'Desplazamiento Suave',
         'settings-smooth-scroll-desc': 'Habilita el scroll suave entre secciones',
         'settings-restore': 'Restaurar Configuración Predeterminada',
-        
+
         // Temas
         'theme-default': 'Predeterminado',
         'theme-dark': 'Oscuro',
@@ -146,7 +146,7 @@ const traducciones = {
         'theme-purple': 'Púrpura',
         'theme-dark-purple': 'Púrpura Oscuro'
     },
-    
+
     en: {
         'menu': 'Menu',
         'nav-home': 'Home',
@@ -162,16 +162,16 @@ const traducciones = {
         'nav-organizations': 'Organizations',
         'nav-contact': 'Contact',
         'nav-settings': 'Settings',
-        'home-greeting': 'Hello! I am',
-        'home-title': 'Professional Programming Technician',
-        'home-subtitle': 'Creating innovative and functional digital solutions',
-        'home-cta-portfolio': 'View Portfolio',
+        'home-greeting': 'Hi, I\'m',
+        'home-title': 'Programming Technician',
+        'home-subtitle': 'Web developer focused on functional solutions.',
+        'home-cta-portfolio': 'View Projects',
         'home-cta-contact': 'Contact',
         'about-title': 'About Me',
-        'about-intro': 'I am Mark Orsini Carrillo, a Professional Programming Technician student at Liceo Comercial Vate Vicente Huidobro, Santiago, Chile. My passion for technology and software development drives me every day to learn more and face new challenges.',
-        'about-passion': 'I consider myself a person with a great disposition for continuous learning. In the world of programming, where technologies evolve constantly, I strive to stay updated with the languages and tools I master.',
-        'about-personality': 'Beyond my technical abilities, I deeply value teamwork and interpersonal relationships. I am a positive, kind, and sociable person.',
-        'about-future': 'My goal is to continue growing as a professional in the technological field, contribute with innovative solutions and be part of teams where I can contribute my knowledge.',
+        'about-intro': 'I\'m Mark Orsini, a Programming student at Liceo Comercial Vate Vicente Huidobro. I\'m passionate about technology and enjoy learning new tools to improve my skills.',
+        'about-passion': 'I like to stay updated in this constantly changing field. I always aim to deeply understand the technologies I use.',
+        'about-personality': 'I value teamwork and good communication. I believe a good environment is key to developing better projects.',
+        'about-future': 'My goal is to keep growing professionally and contribute to teams where I can continue learning.',
         'services-title': 'Services',
         'services-subtitle': 'Areas where I can add value',
         'service-web-title': 'Web Development',
@@ -256,7 +256,7 @@ const traducciones = {
         'theme-purple': 'Purple',
         'theme-dark-purple': 'Dark Purple'
     },
-    
+
     fr: {
         'menu': 'Menu',
         'nav-home': 'Accueil',
@@ -366,7 +366,7 @@ const traducciones = {
         'theme-purple': 'Violet',
         'theme-dark-purple': 'Violet Sombre'
     },
-    
+
     de: {
         'menu': 'Menü',
         'nav-home': 'Startseite',
@@ -476,7 +476,7 @@ const traducciones = {
         'theme-purple': 'Lila',
         'theme-dark-purple': 'Dunkellila'
     },
-    
+
     it: {
         'menu': 'Menu',
         'nav-home': 'Home',
@@ -586,7 +586,7 @@ const traducciones = {
         'theme-purple': 'Viola',
         'theme-dark-purple': 'Viola Scuro'
     },
-    
+
     ru: {
         'menu': 'Меню',
         'nav-home': 'Главная',
@@ -696,7 +696,7 @@ const traducciones = {
         'theme-purple': 'Фиолетовый',
         'theme-dark-purple': 'Темно-фиолетовый'
     },
-    
+
     zh: {
         'menu': '菜单',
         'nav-home': '首页',
@@ -806,7 +806,7 @@ const traducciones = {
         'theme-purple': '紫色',
         'theme-dark-purple': '深紫色'
     },
-    
+
     ja: {
         'menu': 'メニュー',
         'nav-home': 'ホーム',
@@ -916,7 +916,7 @@ const traducciones = {
         'theme-purple': 'パープル',
         'theme-dark-purple': 'ダークパープル'
     },
-    
+
     ko: {
         'menu': '메뉴',
         'nav-home': '홈',
@@ -1026,7 +1026,7 @@ const traducciones = {
         'theme-purple': '퍼플',
         'theme-dark-purple': '다크 퍼플'
     },
-    
+
     pt: {
         'menu': 'Menu',
         'nav-home': 'Início',
@@ -1136,7 +1136,7 @@ const traducciones = {
         'theme-purple': 'Púrpura',
         'theme-dark-purple': 'Púrpura Escuro'
     },
-    
+
     th: {
         'menu': 'เมนู',
         'nav-home': 'หน้าแรก',
@@ -1246,7 +1246,7 @@ const traducciones = {
         'theme-purple': 'ม่วง',
         'theme-dark-purple': 'ม่วงมืด'
     },
-    
+
     ar: {
         'menu': 'القائمة',
         'nav-home': 'الرئيسية',
@@ -1356,7 +1356,7 @@ const traducciones = {
         'theme-purple': 'أرجواني',
         'theme-dark-purple': 'أرجواني داكن'
     },
-    
+
     hi: {
         'menu': 'मेनू',
         'nav-home': 'मुख्य पृष्ठ',
@@ -1466,7 +1466,7 @@ const traducciones = {
         'theme-purple': 'बैंगनी',
         'theme-dark-purple': 'गहरा बैंगनी'
     },
-    
+
     bn: {
         'menu': 'মেনু',
         'nav-home': 'হোম',
@@ -1576,7 +1576,7 @@ const traducciones = {
         'theme-purple': 'বেগুনী',
         'theme-dark-purple': 'গাঢ় বেগুনী'
     },
-    
+
     ur: {
         'menu': 'مینو',
         'nav-home': 'ہوم',
@@ -1686,7 +1686,7 @@ const traducciones = {
         'theme-purple': 'جامنی',
         'theme-dark-purple': 'گہرا جامنی'
     },
-    
+
     id: {
         'menu': 'Menu',
         'nav-home': 'Beranda',
@@ -1796,7 +1796,7 @@ const traducciones = {
         'theme-purple': 'Ungu',
         'theme-dark-purple': 'Ungu Gelap'
     },
-    
+
     vi: {
         'menu': 'Menu',
         'nav-home': 'Trang chủ',
@@ -1906,7 +1906,7 @@ const traducciones = {
         'theme-purple': 'Tím',
         'theme-dark-purple': 'Tím Tối'
     },
-    
+
     tr: {
         'menu': 'Menü',
         'nav-home': 'Ana Sayfa',
@@ -2044,10 +2044,10 @@ function cambiarIdioma(codigoIdioma) {
 function aplicarTraducciones(idioma) {
     const traduccion = traducciones[idioma] || traducciones.es;
     const elementos = document.querySelectorAll('[data-translate]');
-    
+
     elementos.forEach(elemento => {
         const clave = elemento.getAttribute('data-translate');
-        
+
         if (traduccion[clave]) {
             if (elemento.hasAttribute('placeholder')) {
                 elemento.setAttribute('placeholder', traduccion[clave]);
@@ -2061,7 +2061,7 @@ function aplicarTraducciones(idioma) {
 // Función para marcar el idioma activo
 function marcarIdiomaActivo(idioma) {
     const tarjetasIdioma = document.querySelectorAll('.idioma-card');
-    
+
     tarjetasIdioma.forEach(tarjeta => {
         if (tarjeta.dataset.idioma === idioma) {
             tarjeta.classList.add('active');
@@ -2077,9 +2077,9 @@ function mostrarNotificacion(mensaje) {
     notif.className = 'notificacion';
     notif.textContent = mensaje;
     notif.style.cssText = 'position: fixed; top: 20px; right: 20px; background: linear-gradient(135deg, var(--color-primario), var(--color-secundario)); color: white; padding: 1rem 1.5rem; border-radius: 10px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); z-index: 10000; animation: slideInFromTop 0.4s ease-out;';
-    
+
     document.body.appendChild(notif);
-    
+
     setTimeout(() => {
         notif.style.animation = 'slideOutToTop 0.4s ease-in';
         setTimeout(() => notif.remove(), 400);
@@ -2087,7 +2087,7 @@ function mostrarNotificacion(mensaje) {
 }
 
 // Inicializar
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const idiomaActual = obtenerIdiomaActual();
     aplicarTraducciones(idiomaActual);
     cambiarIdioma(idiomaActual); // Asegura RTL si aplica

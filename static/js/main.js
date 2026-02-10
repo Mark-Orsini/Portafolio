@@ -544,7 +544,7 @@ function mostrarMensajeBienvenida() {
         'padding: 10px'
     ].join(';');
     
-    console.log('%c¡Hola! 👋', estilos);
+    console.log('%c¡Hola!', estilos);
     console.log('%cGracias por visitar mi portafolio', 'color: #ec4899; font-size: 14px;');
     console.log('%cMark Orsini Carrillo - Técnico en Programación', 'color: #94a3b8; font-size: 12px;');
     console.log('%cGitHub: https://github.com/Mark-Orsini', 'color: #10b981; font-size: 12px;');
