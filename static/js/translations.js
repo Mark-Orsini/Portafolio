@@ -2075,8 +2075,28 @@ function marcarIdiomaActivo(idioma) {
 function mostrarNotificacion(mensaje) {
     const notif = document.createElement('div');
     notif.className = 'notificacion';
-    notif.textContent = mensaje;
-    notif.style.cssText = 'position: fixed; top: 20px; right: 20px; background: linear-gradient(135deg, var(--color-primario), var(--color-secundario)); color: white; padding: 1rem 1.5rem; border-radius: 10px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); z-index: 10000; animation: slideInFromTop 0.4s ease-out;';
+    notif.innerHTML = `
+        <span style="font-family: var(--font-mono); color: var(--color-primario); min-width: 30px; display: inline-block; text-align: center;">[✓]</span>
+        <span style="font-family: var(--font-mono); font-size: 0.9rem;">${mensaje}</span>
+    `;
+    notif.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.85);
+        color: var(--color-texto);
+        padding: 1rem 1.5rem;
+        border-radius: 0;
+        border: 1px solid var(--color-border);
+        border-left: 4px solid var(--color-primario);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(0,0,0,0.8);
+        z-index: 10000;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        backdrop-filter: blur(5px);
+        animation: slideInFromTop 0.4s ease-out;
+    `;
 
     document.body.appendChild(notif);
 

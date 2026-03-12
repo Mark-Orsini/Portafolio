@@ -81,40 +81,42 @@ function enviarFormulario(evento) {
 function mostrarAlerta(mensaje, tipo = 'info') {
     // Colores según tipo
     const colores = {
-        'success': 'linear-gradient(135deg, #10b981, #14b8a6)',
-        'error': 'linear-gradient(135deg, #ef4444, #f97316)',
-        'warning': 'linear-gradient(135deg, #f59e0b, #eab308)',
-        'info': 'linear-gradient(135deg, #3b82f6, #06b6d4)'
+        'success': '#00ffcc',
+        'error': '#ff0055',
+        'warning': '#ffd700',
+        'info': 'var(--color-primario)'
     };
     
     // Iconos según tipo
     const iconos = {
-        'success': '✓',
-        'error': '✕',
-        'warning': '⚠',
-        'info': 'ℹ'
+        'success': '[✓]',
+        'error': '[✕]',
+        'warning': '[⚠]',
+        'info': '[ℹ]'
     };
     
     const alerta = document.createElement('div');
     alerta.className = 'alerta-personalizada';
     alerta.innerHTML = `
-        <span class="alerta-icono">${iconos[tipo]}</span>
-        <span class="alerta-mensaje">${mensaje}</span>
+        <span class="alerta-icono" style="font-family: var(--font-mono); color: ${colores[tipo]}; min-width: 30px; text-align: center;">${iconos[tipo]}</span>
+        <span class="alerta-mensaje" style="font-family: var(--font-mono); font-size: 0.9rem;">${mensaje}</span>
     `;
     alerta.style.cssText = `
         position: fixed;
         top: 20px;
         right: 20px;
-        background: ${colores[tipo]};
-        color: white;
+        background: rgba(0, 0, 0, 0.85);
+        color: var(--color-texto);
         padding: 1rem 1.5rem;
-        border-radius: 12px;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        border-radius: 0;
+        border: 1px solid var(--color-border);
+        border-left: 4px solid ${colores[tipo]};
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(0,0,0,0.8);
         z-index: 10000;
         display: flex;
         align-items: center;
         gap: 0.75rem;
-        font-weight: 600;
+        backdrop-filter: blur(5px);
         animation: slideInFromTop 0.4s ease-out;
         max-width: 400px;
     `;
@@ -354,19 +356,20 @@ function mostrarBotonVolverArriba() {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
-            border: none;
-            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 0;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--color-primario);
+            color: var(--color-primario);
             font-size: 1.2rem;
             cursor: pointer;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.8), 0 0 10px var(--color-glow);
             z-index: 1000;
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
         `;
         document.body.appendChild(botonVolverArriba);
     }
